@@ -1,8 +1,22 @@
 aid: xilis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/xilis.png
 name: Xilis
-description: 'Xilis is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Xilis is a life-sciences / precision-oncology company developing patient-derived
+  MicroOrganoSphere (MOS) technology to model a patient''s tumor outside the body for functional drug
+  testing and drug discovery. Surfaced as a portfolio company of GV and added to the API Evangelist
+  network. Enrichment probes found a marketing website only (SiteGround-hosted, bot-protection returns
+  HTTP 403) with no public developer portal, documentation, OpenAPI, or API surface of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/xilis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +26,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 tags:
 - Company
 - Life Sciences
+- Precision Oncology
+- Biotechnology
+- Drug Discovery
+- Organoids
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,7 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/xilis-domain-security.yml
 - type: Website
   url: http://xilis.com
